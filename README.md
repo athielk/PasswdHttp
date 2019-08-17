@@ -43,7 +43,7 @@ Example Response:
 “/home/dwoodlins”, “shell”: “/bin/false”}
 ]
 
-# GET /users/\<uid>"
+# GET /users/\<uid>
 
 Return a single user with <uid>. Return 404 if <uid> is not found.
 
@@ -64,9 +64,8 @@ Return a list of all groups on the system, a defined by /etc/group.
 
 Example Response:
 [
-{“name”: “_analyticsusers”, “gid”: 250, “members”:
-[“_analyticsd’,”_networkd”,”_timed”]},
-{“name”: “docker”, “gid”: 1002, “members”: []}
+{“name”: “_analyticsusers”, “gid”: 250, “members”: [“_analyticsd’,”_networkd”,”_timed”]},
+{“name”: “docker”, “gid”: 1002, “members”: [“dwoodlins”]}
 ]
 
 # GET /groups/query[?name=\<nq>]\[&gid=\<gq>][&member=\<mq1>[&member=\<mq2>]\[&...]]
