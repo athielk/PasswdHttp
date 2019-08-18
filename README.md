@@ -22,8 +22,7 @@ Example Response:
 “/home/dwoodlins”, “shell”: “/bin/false”}
 ]
 
-# GET
-/users/query[?name=<nq>][&uid=<uq>][&gid=<gq>][&comment=<cq>][&home=<hq>][&shell=<sq>]
+# GET /users/query[?name=<nq>][&uid=<uq>][&gid=<gq>][&comment=<cq>][&home=<hq>][&shell=<sq>]
 Return a list of users matching all of the specified query fields. The bracket notation indicates that any of the
 following query parameters may be supplied:
 - name
