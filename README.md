@@ -1,10 +1,17 @@
+# Run
+run with python 3.6 (need to add a requirments file)
+for example: python /main
+
+if you want to define the paths to the files use
+python ./main <path_to_passwd> <path_to_groups>
+
 # PasswdHttp
 Passwd as a service
 
 
 This is a minimal HTTP service that exposes the user and group information on
 a UNIX-like system that is usually locked away in the UNIX /etc/passwd and /etc/groups files.
-While this service is obviously a toy (and potentially a security nightmare). However I intend to write production quality code, including at least: Unit Tests, and README documentation. 
+While this service is obviously a toy (and potentially a security nightmare). However I intend to write production quality code, including at least.
 
 To aid testing and deployment, the paths to the passwd and groups file should be configurable, defaulting to
 the standard system path. If the input files are absent or malformed, the service will indicate an error.
